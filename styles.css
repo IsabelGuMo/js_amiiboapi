@@ -9,12 +9,39 @@
 body {
   background-color: #6b88fe;
   color: whitesmoke;
-  /*   background-image: url(https://wallpaperaccess.com/full/432466.jpg);
-  background-repeat: no-repeat;
-  background-size: contain; */
 }
 
 h1 {
   text-align: center;
   padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.element {
+  text-align: center;
+  width: 40%;
+  height: auto;
+  padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  .element {
+    width: 20%;
+  }
+}
+
+.element img {
+  max-width: 100%;
+  max-height: 50%;
+  object-fit: contain;
+}
+
+.element h2 {
+  text-decoration: underline;
+  padding: 8px;
 }
